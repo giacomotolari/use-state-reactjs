@@ -1,16 +1,15 @@
 import "./App.css";
+import { useState } from "react";
 
 function App() {
-  console.log("App component is rendering")
-  let count = 0;
+  console.log("App component is rendering");
+  const [count, setCount] = useState(0);
 
   const increment = () => {
     console.log("count before increment:", count);
-    count++;
+    setCount(count + 1);
     console.log("count after increment:", count);
   };
-
-  // dom + virtual dom
 
   return (
     <>
