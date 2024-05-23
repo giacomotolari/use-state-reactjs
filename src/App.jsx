@@ -1,7 +1,7 @@
 import "./App.css";
 
 function App() {
-  
+  console.log("App component is rendering")
   let count = 0;
 
   const increment = () => {
@@ -9,6 +9,8 @@ function App() {
     count++;
     console.log("count after increment:", count);
   };
+
+  // dom + virtual dom
 
   return (
     <>
